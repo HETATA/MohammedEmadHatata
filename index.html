@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مصنع حقن بلاستيـــك</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-gear"></i>
+            <span>مصنع حقن بلاستيـــك</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#" class="active" onclick="backToHome()">الرئيسية</a>
+            <a href="#" onclick="showProductsSection()">دراسة الجدوى</a>
+            <a href="#" onclick="showFactoryResources()">موارد المصنع</a>
+            <a href="javascript:void(0)" onclick="showArticlesSection()">المقالات</a>
+            <a href="javascript:void(0)" onclick="showPricesSection()">الأسعار</a>
+            <a href="#" onclick="showAboutSection()">من نحن</a>
+            <a href="https://wa.me/201554465966" target="_blank">تواصل معنا</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="start-btn" onclick="showProductsSection()" type="button">
+                ابدأ الآن
+                <i class="fa-solid fa-rocket"></i>
+            </button>
+
+            <button class="user-btn" type="button" onclick="showUniversitySection()">
+                <i class="fa-regular fa-user"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Home Hero -->
+    <main class="hero" id="homeSection">
+
+        <div class="background-icons">
+            <i class="fa-solid fa-recycle"></i>
+            <i class="fa-solid fa-bottle-water"></i>
+            <i class="fa-solid fa-industry"></i>
+        </div>
+
+        <section class="hero-content">
+            <h1>
+                ابدأ مشروع<br>
+                مصنع حقن البلاستيك باحتراف
+            </h1>
+
+            <p>
+                منصة تساعدك على دراسة المشروع وتجهيز موارد المصنع خطوة بخطوة.
+            </p>
+
+            <div class="divider">
+                <span></span>
+                <b></b>
+                <span></span>
+            </div>
+
+            <div class="main-cards">
+
+                <!-- Feasibility Card -->
+                <div class="feature-card" onclick="showProductsSection()">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+
+                    <div class="card-text">
+                        <h2>دراسة جدوى</h2>
+                        <span></span>
+                        <p>
+                            احسب التكلفة، الأرباح،<br>
+                            رأس المال، وخطة التشغيل.
+                        </p>
+                    </div>
+
+                    <button class="card-btn" type="button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+
+                <!-- Factory Resources Card -->
+                <div class="feature-card" onclick="showFactoryResources()">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+
+                    <div class="card-text">
+                        <h2>موارد المصنع</h2>
+                        <span></span>
+                        <p>
+                            تعرف على المعدات، الخامات،<br>
+                            العمالة، والموردين.
+                        </p>
+                    </div>
+
+                    <button class="card-btn" type="button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+
+                <!-- Project Planning Card -->
+                <div class="feature-card" onclick="showProjectPlanning()">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <div class="card-text">
+                        <h2>تخطيط المشروع</h2>
+                        <span></span>
+                        <p>
+                            احسب المسار الحرج، السماحيات،<br>
+                            ضغط المشروع، ومخطط جانت.
+                        </p>
+                    </div>
+
+                    <button class="card-btn" type="button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bottom-features">
+
+            <div class="bottom-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h4>بيانات دقيقة</h4>
+                    <p>ومحدثة باستمرار</p>
+                </div>
+            </div>
+
+            <div class="bottom-item">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                    <h4>دعم فني</h4>
+                    <p>متخصص</p>
+                </div>
+            </div>
+
+            <div class="bottom-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                    <h4>شروحات مبسطة</h4>
+                    <p>وخطوات عملية</p>
+                </div>
+            </div>
+
+            <div class="bottom-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <div>
+                    <h4>خطط مالية</h4>
+                    <p>واقعية واحترافية</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Feasibility Main Products Section -->
+    <section class="products-section" id="productsSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToHome()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2>اختر نوع المنتج</h2>
+            <p>اختر المجال الذي تريد عمل دراسة جدوى له داخل مصنع حقن البلاستيك.</p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card" onclick="showSubProducts('home')">
+                <i class="fa-solid fa-house"></i>
+                <h3>منتجات منزلية</h3>
+                <p>كراسي، ترابيزات، علب تخزين، علاقات.</p>
+            </div>
+
+            <div class="product-card" onclick="showSubProducts('packaging')">
+                <i class="fa-solid fa-bottle-water"></i>
+                <h3>تعبئة وتغليف</h3>
+                <p>زجاجات، أغطية، عبوات، علب طعام.</p>
+            </div>
+
+            <div class="product-card" onclick="showSubProducts('kitchen')">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>منتجات مطابخ</h3>
+                <p>أطباق، أكواب، ملاعق، مصافي.</p>
+            </div>
+
+            <div class="product-card" onclick="showSubProducts('medical')">
+                <i class="fa-solid fa-briefcase-medical"></i>
+                <h3>منتجات طبية</h3>
+                <p>علب أدوية، أدوات معامل، عبوات مطهرات.</p>
+            </div>
+
+            <div class="product-card" onclick="showSubProducts('industrial')">
+                <i class="fa-solid fa-gears"></i>
+                <h3>منتجات صناعية</h3>
+                <p>تروس، كليبس، قطع غيار، أغطية مواسير.</p>
+            </div>
+
+            <div class="product-card" onclick="showSubProducts('electric')">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>منتجات كهربائية</h3>
+                <p>علب مفاتيح، وشوش كهرباء، علب توزيع.</p>
+            </div>
+
+            <div class="product-card" onclick="showSubProducts('kids')">
+                <i class="fa-solid fa-child-reaching"></i>
+                <h3>منتجات أطفال</h3>
+                <p>ألعاب، مكعبات، كراسي أطفال، لانش بوكس.</p>
+            </div>
+
+            <div class="product-card" onclick="showSubProducts('agriculture')">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>منتجات زراعية</h3>
+                <p>أصص زرع، وصلات ري، صناديق فاكهة.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Feasibility Sub Products Section -->
+    <section class="sub-products-section" id="subProductsSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToProducts()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2 id="subProductsTitle">اختر المنتج</h2>
+            <p>اختر المنتج المحدد لبدء تجهيز دراسة الجدوى.</p>
+        </div>
+
+        <div class="products-grid" id="subProductsGrid"></div>
+
+    </section>
+
+    <!-- Factory Resources Section -->
+    <section class="products-section" id="factoryResourcesSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToHome()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2>موارد المصنع</h2>
+            <p>اختر نوع المورد أو المعدة التي تريد معرفة تفاصيلها ومواصفاتها.</p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card" onclick="showResourceItems('injectionMachines')">
+                <i class="fa-solid fa-industry"></i>
+                <h3>ماكينات حقن</h3>
+                <p>ماكينات حقن بلاستيك حسب القوة والطن.</p>
+            </div>
+
+            <div class="product-card" onclick="showResourceItems('blowMachines')">
+                <i class="fa-solid fa-wind"></i>
+                <h3>ماكينات نفخ</h3>
+                <p>ماكينات نفخ زجاجات وعبوات وجراكن.</p>
+            </div>
+
+            <div class="product-card" onclick="showResourceItems('molds')">
+                <i class="fa-solid fa-cubes"></i>
+                <h3>الاسطمبات</h3>
+                <p>اسطمبات منتجات مختلفة حسب شكل المنتج.</p>
+            </div>
+
+            <div class="product-card" onclick="showResourceItems('materials')">
+                <i class="fa-solid fa-flask"></i>
+                <h3>الخامات</h3>
+                <p>PP و PE و PET و ABS وخامات أخرى.</p>
+            </div>
+
+            <div class="product-card" onclick="showResourceItems('supportEquipment')">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>معدات مساعدة</h3>
+                <p>تشيلر، كومبريسور، خلاط، كسارة، مجفف.</p>
+            </div>
+
+            <div class="product-card" onclick="showResourceItems('labor')">
+                <i class="fa-solid fa-users-gear"></i>
+                <h3>العمالة</h3>
+                <p>مشغلين، فنيين، جودة، صيانة وإدارة.</p>
+            </div>
+
+            <div class="product-card" onclick="showResourceItems('suppliers')">
+                <i class="fa-solid fa-truck-field"></i>
+                <h3>الموردين</h3>
+                <p>موردين خامات، ماكينات، اسطمبات وقطع غيار.</p>
+            </div>
+
+            <div class="product-card" onclick="showResourceItems('utilities')">
+                <i class="fa-solid fa-plug-circle-bolt"></i>
+                <h3>المرافق</h3>
+                <p>كهرباء، مياه، تهوية، مساحة المصنع.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Resource Items Section -->
+    <section class="sub-products-section" id="resourceItemsSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToFactoryResources()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2 id="resourceItemsTitle">تفاصيل المورد</h2>
+            <p>اختر العنصر لمعرفة المواصفات والسعر التقريبي.</p>
+        </div>
+
+        <div class="products-grid" id="resourceItemsGrid"></div>
+
+    </section>
+
+    <!-- Resource Details Section -->
+    <section class="sub-products-section" id="resourceDetailsSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToResourceItems()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2 id="resourceDetailsTitle">تفاصيل المعدة</h2>
+            <p>مواصفات وسعر تقريبي قابل للتعديل حسب السوق والمورد.</p>
+        </div>
+
+        <div class="resource-details-card" id="resourceDetailsCard"></div>
+
+    </section>
+
+    <!-- About Us Section -->
+    <section class="sub-products-section" id="aboutSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToHome()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2>من نحن</h2>
+            <p>تعرف على فريق العمل القائم على مشروع مصنع حقن البلاستيك.</p>
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class="fa-solid fa-users-gear"></i>
+            </div>
+
+            <h3>فريق مشروع مصنع حقن البلاستيك</h3>
+
+            <p class="about-text">
+                نحن فريق من طلاب كلية الهندسة - جامعة بورسعيد،
+                قسم ميكانيكا إنتاج وتصميم هندسي.
+                نعمل على إنشاء منصة تساعد المستثمر أو صاحب المشروع على دراسة
+                مشروع مصنع حقن البلاستيك وتجهيز موارده خطوة بخطوة.
+            </p>
+
+            <h4>أعضاء فريق العمل</h4>
+
+            <div class="team-grid">
+
+                <div class="team-member">
+                    <img src="images/mohamed_emad.jpeg" alt="م. محمد عماد محمد شطا حتاته">
+                    <span>م. محمد عماد محمد شطا حتاته</span>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/mohamed_hamouda.jpeg" alt="م. محمد محمود السيد حموده">
+                    <span>م. محمد محمود السيد حموده</span>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/mohamed_kamal.jpeg" alt="م. محمد كمال كمال مصطفى">
+                    <span>م. محمد كمال كمال مصطفى</span>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/mohamed_youssef.jpeg" alt="م. محمد يوسف محمد رمادة">
+                    <span>م. محمد يوسف محمد رمادة</span>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/mohamed_ali.jpeg" alt="م. محمد علي ابوطالب التميمي">
+                    <span>م. محمد علي ابوطالب التميمي</span>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/mohamed_iraqi.png" alt="م. محمد محمود الحسانين العراقي">
+                    <span>م. محمد محمود الحسانين العراقي</span>
+                </div>
+
+            </div>
+
+            <div class="supervisor-box">
+                <img src="images/dr_hanan.png" alt="د. حنان">
+                <div>
+                    <h4>تحت إشراف</h4>
+                    <p>د. حنان</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Prices Section -->
+    <section class="sub-products-section" id="pricesSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToHome()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2>الأسعار</h2>
+            <p>معلومات مهمة عن الأسعار التقديرية داخل السوق المصري.</p>
+        </div>
+
+        <div class="prices-card">
+
+            <div class="prices-icon">
+                <i class="fa-solid fa-tags"></i>
+            </div>
+
+            <h3>تنبيه مهم بخصوص الأسعار</h3>
+
+            <p>
+                الأسعار الموجودة داخل المنصة هي أسعار تقريبية وليست أسعار نهائية،
+                وتم وضعها بهدف مساعدة المستخدم على تكوين تصور مبدئي عن تكلفة
+                إنشاء وتشغيل مصنع حقن البلاستيك داخل السوق المصري.
+            </p>
+
+            <p>
+                تختلف الأسعار الفعلية حسب حالة الماكينة، بلد المنشأ، الماركة،
+                سنة الصنع، قدرة الإنتاج، حالة الاسطمبات، تكلفة الشحن، وسعر الصرف
+                في وقت الشراء.
+            </p>
+
+            <div class="prices-notes">
+
+                <div class="price-note">
+                    <i class="fa-solid fa-industry"></i>
+                    <h4>الماكينات</h4>
+                    <p>تختلف حسب الطن، الحالة، والماركة سواء جديدة أو مستعملة.</p>
+                </div>
+
+                <div class="price-note">
+                    <i class="fa-solid fa-cubes"></i>
+                    <h4>الاسطمبات</h4>
+                    <p>تتغير حسب حجم المنتج، عدد التجاويف، ودقة التصميم.</p>
+                </div>
+
+                <div class="price-note">
+                    <i class="fa-solid fa-flask"></i>
+                    <h4>الخامات</h4>
+                    <p>أسعار الخامات تتغير باستمرار حسب السوق وسعر الدولار.</p>
+                </div>
+
+                <div class="price-note">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h4>العمالة والتشغيل</h4>
+                    <p>تختلف حسب عدد الورديات، الخبرة، ومكان المصنع.</p>
+                </div>
+
+            </div>
+
+            <div class="warning-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <strong>
+                    للحصول على دراسة دقيقة، يجب تحديث الأسعار من الموردين المحليين
+                    قبل اتخاذ قرار الشراء أو بدء التنفيذ.
+                </strong>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Articles Section -->
+    <section class="sub-products-section" id="articlesSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToHome()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2>المقالات</h2>
+            <p>مقالات تعليمية تساعدك على فهم مشروع مصنع حقن البلاستيك قبل التنفيذ.</p>
+        </div>
+
+        <div class="articles-grid">
+
+            <div class="article-card" onclick="showArticleDetails('basics')">
+                <i class="fa-solid fa-gears"></i>
+                <h3>أساسيات حقن البلاستيك</h3>
+                <p>تعرف على فكرة الحقن، الماكينة، الاسطمبة، ودورة التشغيل.</p>
+            </div>
+
+            <div class="article-card" onclick="showArticleDetails('chooseProduct')">
+                <i class="fa-solid fa-box-open"></i>
+                <h3>اختيار المنتج المناسب</h3>
+                <p>كيف تختار منتج مربح ومناسب كبداية للمصنع.</p>
+            </div>
+
+            <div class="article-card" onclick="showArticleDetails('materialsArticle')">
+                <i class="fa-solid fa-flask"></i>
+                <h3>أنواع الخامات البلاستيكية</h3>
+                <p>شرح مبسط لخامات PP و PE و PET و ABS واستخداماتها.</p>
+            </div>
+
+            <div class="article-card" onclick="showArticleDetails('machinesArticle')">
+                <i class="fa-solid fa-industry"></i>
+                <h3>الماكينات المطلوبة</h3>
+                <p>ماكينات الحقن والمعدات المساعدة التي يحتاجها المصنع.</p>
+            </div>
+
+            <div class="article-card" onclick="showArticleDetails('mistakes')">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h3>أخطاء شائعة في البداية</h3>
+                <p>أهم الأخطاء التي يقع فيها أصحاب المشاريع الجديدة.</p>
+            </div>
+
+            <div class="article-card" onclick="showArticleDetails('costArticle')">
+                <i class="fa-solid fa-calculator"></i>
+                <h3>حساب تكلفة المنتج</h3>
+                <p>كيف تحسب تكلفة القطعة من خامة وكهرباء وعمالة وهالك.</p>
+            </div>
+
+            <div class="article-card" onclick="showArticleDetails('injectionVsBlow')">
+                <i class="fa-solid fa-code-compare"></i>
+                <h3>الحقن أم النفخ؟</h3>
+                <p>الفرق بين تصنيع المنتجات بالحقن وتصنيع الزجاجات بالنفخ.</p>
+            </div>
+
+            <div class="article-card" onclick="showArticleDetails('usedMachine')">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h3>شراء ماكينة مستعملة</h3>
+                <p>نصائح مهمة قبل شراء ماكينة حقن أو نفخ مستعملة.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Article Details Section -->
+    <section class="sub-products-section" id="articleDetailsSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToArticles()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2 id="articleDetailsTitle">عنوان المقال</h2>
+            <p>محتوى المقال التعليمي.</p>
+        </div>
+
+        <div class="article-details-card" id="articleDetailsCard"></div>
+
+    </section>
+
+    <!-- University Section -->
+    <section class="sub-products-section" id="universitySection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToHome()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2>جامعة بورسعيد</h2>
+            <p>نبذة عن الجامعة التي ينتمي إليها فريق المشروع.</p>
+        </div>
+
+        <div class="college-card">
+
+            <div class="college-icon">
+                <i class="fa-solid fa-building-columns"></i>
+            </div>
+
+            <h3>جامعة بورسعيد</h3>
+
+            <p>
+                جامعة بورسعيد هي جامعة مصرية حديثة ذات أصول عريقة،
+                وتسعى إلى تقديم تعليم جامعي متميز يخدم الطلاب والمجتمع،
+                مع الاهتمام بالبحث العلمي والتطوير وخدمة البيئة المحيطة.
+            </p>
+
+            <p>
+                ينتمي فريق هذا المشروع إلى كلية الهندسة - جامعة بورسعيد،
+                قسم ميكانيكا إنتاج وتصميم هندسي، ويهدف المشروع إلى تقديم
+                نموذج رقمي يساعد على فهم ودراسة مشروع مصنع حقن البلاستيك.
+            </p>
+
+            <div class="university-points">
+
+                <div class="university-point">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h4>تعليم جامعي</h4>
+                    <p>تهتم الجامعة بتقديم برامج تعليمية تخدم الطلاب وسوق العمل.</p>
+                </div>
+
+                <div class="university-point">
+                    <i class="fa-solid fa-flask"></i>
+                    <h4>بحث علمي</h4>
+                    <p>تدعم الجامعة البحث العلمي والمشروعات البحثية.</p>
+                </div>
+
+                <div class="university-point">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h4>خدمة المجتمع</h4>
+                    <p>تسعى الجامعة إلى ربط التعليم بالمجتمع والصناعة.</p>
+                </div>
+
+            </div>
+
+            <a class="college-link" href="https://psu.edu.eg/" target="_blank">
+                زيارة الموقع الرسمي لجامعة بورسعيد
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Project Planning Section -->
+    <section class="sub-products-section" id="projectPlanningSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToHome()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2>تخطيط المشروع</h2>
+            <p>أدخل بيانات الأنشطة    PERT / CPM لحساب المسار الحرج والسماحيات.</p>
+        </div>
+
+        <div class="planner-card">
+
+            <div class="planner-info">
+                <i class="fa-solid fa-diagram-project"></i>
+                <div>
+                    <h3>حاسبة PERT / CPM</h3>
+                    <p>
+                        أدخل بيانات الأنشطة، ثم اضغط احسب المشروع.
+                    </p>
+                </div>
+            </div>
+
+            <div class="planner-actions">
+                <button class="start-btn" onclick="addHorizontalActivity()" type="button">
+                    إضافة نشاط
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <button class="start-btn" onclick="loadSheetOneData()" type="button">
+                    تحميل بيانات الشيت الأول
+                    <i class="fa-solid fa-table"></i>
+                </button>
+
+                <button class="start-btn" onclick="calculateArrowCPM()" type="button">
+                    احسب المشروع
+                    <i class="fa-solid fa-calculator"></i>
+                </button>
+            </div>
+
+            <div class="table-wrap">
+                <table class="planner-table horizontal-planner-table">
+                    <tbody>
+                        <tr id="activityNamesRow">
+                            <th>Activities</th>
+                            <td><input type="text" value="0-1"></td>
+                            <td><input type="text" value="0-2"></td>
+                            <td><input type="text" value="0-3"></td>
+                            <td><input type="text" value="1-2"></td>
+                            <td><input type="text" value="1-3"></td>
+                        </tr>
+
+                        <tr id="normalTimeRow">
+                            <th>Normal Time</th>
+                            <td><input type="number" value="6"></td>
+                            <td><input type="number" value="5"></td>
+                            <td><input type="number" value="4"></td>
+                            <td><input type="number" value="3"></td>
+                            <td><input type="number" value="2"></td>
+                        </tr>
+
+                        <tr id="normalCostRow">
+                            <th>Normal Cost</th>
+                            <td><input type="number" value="25"></td>
+                            <td><input type="number" value="20"></td>
+                            <td><input type="number" value="15"></td>
+                            <td><input type="number" value="10"></td>
+                            <td><input type="number" value="5"></td>
+                        </tr>
+
+                        <tr id="crashTimeRow">
+                            <th>Crash Time</th>
+                            <td><input type="number" value="4"></td>
+                            <td><input type="number" value="3"></td>
+                            <td><input type="number" value="3"></td>
+                            <td><input type="number" value="2"></td>
+                            <td><input type="number" value="1"></td>
+                        </tr>
+
+                        <tr id="crashCostRow">
+                            <th>Crash Cost</th>
+                            <td><input type="number" value="32"></td>
+                            <td><input type="number" value="25"></td>
+                            <td><input type="number" value="18"></td>
+                            <td><input type="number" value="12"></td>
+                            <td><input type="number" value="6.5"></td>
+                        </tr>
+
+                        <tr id="deleteActivityRow">
+                            <th>حذف</th>
+                            <td><button class="delete-cell-btn" onclick="deleteHorizontalActivity(1)">×</button></td>
+                            <td><button class="delete-cell-btn" onclick="deleteHorizontalActivity(2)">×</button></td>
+                            <td><button class="delete-cell-btn" onclick="deleteHorizontalActivity(3)">×</button></td>
+                            <td><button class="delete-cell-btn" onclick="deleteHorizontalActivity(4)">×</button></td>
+                            <td><button class="delete-cell-btn" onclick="deleteHorizontalActivity(5)">×</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="plannerResults" class="planner-results"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Feasibility Details Section -->
+    <section class="sub-products-section" id="feasibilityDetailsSection">
+
+        <div class="section-header">
+            <button class="back-btn" onclick="backToStudyProducts()" type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+                رجوع
+            </button>
+
+            <h2 id="feasibilityTitle">دراسة جدوى المنتج</h2>
+            <p id="feasibilityIntro">تفاصيل مبدئية شاملة للمنتج المختار.</p>
+        </div>
+
+        <div class="study-layout" id="feasibilityDetailsCard"></div>
+
+    </section>
+
+    <script>
+        const hero = document.getElementById('homeSection');
+
+        const productsSection = document.getElementById('productsSection');
+        const subProductsSection = document.getElementById('subProductsSection');
+        const subProductsTitle = document.getElementById('subProductsTitle');
+        const subProductsGrid = document.getElementById('subProductsGrid');
+
+        const factoryResourcesSection = document.getElementById('factoryResourcesSection');
+        const resourceItemsSection = document.getElementById('resourceItemsSection');
+        const resourceDetailsSection = document.getElementById('resourceDetailsSection');
+
+        const resourceItemsTitle = document.getElementById('resourceItemsTitle');
+        const resourceItemsGrid = document.getElementById('resourceItemsGrid');
+        const resourceDetailsTitle = document.getElementById('resourceDetailsTitle');
+        const resourceDetailsCard = document.getElementById('resourceDetailsCard');
+
+        const aboutSection = document.getElementById('aboutSection');
+        const pricesSection = document.getElementById('pricesSection');
+        const articlesSection = document.getElementById('articlesSection');
+        const articleDetailsSection = document.getElementById('articleDetailsSection');
+        const articleDetailsTitle = document.getElementById('articleDetailsTitle');
+        const articleDetailsCard = document.getElementById('articleDetailsCard');
+        const universitySection = document.getElementById('universitySection');
+
+        const projectPlanningSection = document.getElementById('projectPlanningSection');
+
+        const feasibilityDetailsSection = document.getElementById('feasibilityDetailsSection');
+        const feasibilityTitle = document.getElementById('feasibilityTitle');
+        const feasibilityIntro = document.getElementById('feasibilityIntro');
+        const feasibilityDetailsCard = document.getElementById('feasibilityDetailsCard');
+
+        let currentResourceType = null;
+
+        const productsData = {
+            home: {
+                title: 'منتجات منزلية',
+                items: [
+                    ['fa-chair', 'كراسي بلاستيك'],
+                    ['fa-table-cells-large', 'ترابيزات بلاستيك'],
+                    ['fa-box', 'علب تخزين'],
+                    ['fa-shirt', 'علاقات ملابس'],
+                    ['fa-basket-shopping', 'سبت غسيل'],
+                    ['fa-trash', 'سلات قمامة'],
+                    ['fa-box-open', 'أدراج بلاستيك'],
+                    ['fa-layer-group', 'رفوف بلاستيك']
+                ]
+            },
+
+            packaging: {
+                title: 'تعبئة وتغليف',
+                items: [
+                    ['fa-bottle-water', 'زجاجات مياه'],
+                    ['fa-wine-bottle', 'زجاجات عصير'],
+                    ['fa-circle-dot', 'أغطية زجاجات'],
+                    ['fa-box-open', 'علب طعام'],
+                    ['fa-pump-soap', 'عبوات منظفات'],
+                    ['fa-prescription-bottle', 'عبوات شامبو'],
+                    ['fa-box', 'برطمانات بلاستيك'],
+                    ['fa-cubes', 'علب تغليف صغيرة']
+                ]
+            },
+
+            kitchen: {
+                title: 'منتجات مطابخ',
+                items: [
+                    ['fa-plate-wheat', 'أطباق'],
+                    ['fa-mug-hot', 'أكواب'],
+                    ['fa-spoon', 'ملاعق'],
+                    ['fa-utensils', 'شوك وسكاكين'],
+                    ['fa-box', 'علب ثلاجة'],
+                    ['fa-kitchen-set', 'حامل أطباق'],
+                    ['fa-bowl-food', 'أطباق تقديم'],
+                    ['fa-filter', 'مصافي بلاستيك']
+                ]
+            },
+
+            medical: {
+                title: 'منتجات طبية',
+                items: [
+                    ['fa-syringe', 'سرنجات'],
+                    ['fa-pills', 'علب أدوية'],
+                    ['fa-vial', 'أنابيب اختبار'],
+                    ['fa-prescription-bottle-medical', 'عبوات مطهرات'],
+                    ['fa-flask', 'أدوات معامل'],
+                    ['fa-kit-medical', 'أغطية طبية'],
+                    ['fa-capsules', 'علب كبسولات'],
+                    ['fa-hand-holding-medical', 'منتجات طبية مساعدة']
+                ]
+            },
+
+            industrial: {
+                title: 'منتجات صناعية',
+                items: [
+                    ['fa-gear', 'تروس بلاستيك'],
+                    ['fa-screwdriver-wrench', 'قطع غيار صغيرة'],
+                    ['fa-paperclip', 'كليبس تثبيت'],
+                    ['fa-circle', 'أغطية مواسير'],
+                    ['fa-box-archive', 'علب صناعية'],
+                    ['fa-grip-lines', 'مقابض بلاستيك'],
+                    ['fa-cubes', 'قطع تجميع'],
+                    ['fa-wrench', 'إكسسوارات صناعية']
+                ]
+            },
+
+            electric: {
+                title: 'منتجات كهربائية',
+                items: [
+                    ['fa-toggle-on', 'علب مفاتيح'],
+                    ['fa-plug', 'فيش ومشتركات'],
+                    ['fa-lightbulb', 'قواعد لمبات'],
+                    ['fa-square', 'وشوش كهرباء'],
+                    ['fa-network-wired', 'علب توزيع'],
+                    ['fa-bolt', 'حوامل أسلاك'],
+                    ['fa-charging-station', 'قطع كهرباء بلاستيك'],
+                    ['fa-solar-panel', 'علب حماية']
+                ]
+            },
+
+            kids: {
+                title: 'منتجات أطفال',
+                items: [
+                    ['fa-puzzle-piece', 'مكعبات تركيب'],
+                    ['fa-car-side', 'عربيات صغيرة'],
+                    ['fa-child', 'كراسي أطفال'],
+                    ['fa-box', 'لانش بوكس'],
+                    ['fa-gamepad', 'ألعاب بلاستيك'],
+                    ['fa-baby', 'أطباق أطفال'],
+                    ['fa-shapes', 'ألعاب تعليمية'],
+                    ['fa-cube', 'مكعبات أطفال']
+                ]
+            },
+
+            agriculture: {
+                title: 'منتجات زراعية',
+                items: [
+                    ['fa-seedling', 'أصص زرع'],
+                    ['fa-droplet', 'وصلات ري'],
+                    ['fa-boxes-stacked', 'صناديق فاكهة'],
+                    ['fa-spray-can-sparkles', 'رشاشات صغيرة'],
+                    ['fa-leaf', 'مشابك زراعية'],
+                    ['fa-water', 'مواسير ري صغيرة'],
+                    ['fa-tree', 'حوامل شتلات'],
+                    ['fa-recycle', 'صناديق زراعية']
+                ]
+            }
+        };
+
+        const resourcesData = {
+            injectionMachines: {
+                title: 'ماكينات حقن البلاستيك',
+                items: [
+                    {
+                        icon: 'fa-industry',
+                        name: 'ماكينة حقن 120 طن',
+                        specs: [
+                            'مناسبة للمنتجات الصغيرة مثل الأغطية والعلب الصغيرة',
+                            'قوة إغلاق: 120 طن',
+                            'وزن حقن تقريبي: 150 - 250 جرام',
+                            'استهلاك كهرباء متوسط',
+                            'تحتاج اسطمبة مناسبة للمنتج'
+                        ],
+                        price: 'سعر تقريبي: من 450,000 إلى 900,000 جنيه حسب الحالة والماركة'
+                    },
+                    {
+                        icon: 'fa-industry',
+                        name: 'ماكينة حقن 180 طن',
+                        specs: [
+                            'مناسبة للأطباق والعلب والمنتجات المتوسطة',
+                            'قوة إغلاق: 180 طن',
+                            'وزن حقن تقريبي: 300 - 500 جرام',
+                            'مناسبة كبداية لمصنع صغير أو متوسط',
+                            'تحتاج تشيلر وخلاط خامات'
+                        ],
+                        price: 'سعر تقريبي: من 700,000 إلى 1,400,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-industry',
+                        name: 'ماكينة حقن 250 طن',
+                        specs: [
+                            'مناسبة للمنتجات المتوسطة والكبيرة',
+                            'قوة إغلاق: 250 طن',
+                            'مناسبة لعلب كبيرة وقطع صناعية',
+                            'إنتاجية أعلى من الماكينات الصغيرة',
+                            'تحتاج كهرباء وتجهيزات أقوى'
+                        ],
+                        price: 'سعر تقريبي: من 1,000,000 إلى 2,200,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-industry',
+                        name: 'ماكينة حقن 350 طن',
+                        specs: [
+                            'مناسبة للكراسي الصغيرة والمنتجات الكبيرة',
+                            'قوة إغلاق: 350 طن',
+                            'تحتاج مساحة أكبر داخل المصنع',
+                            'تحتاج فني تشغيل خبرة',
+                            'مناسبة لمشروعات إنتاج أكبر'
+                        ],
+                        price: 'سعر تقريبي: من 1,800,000 إلى 3,500,000 جنيه'
+                    }
+                ]
+            },
+
+            blowMachines: {
+                title: 'ماكينات نفخ البلاستيك',
+                items: [
+                    {
+                        icon: 'fa-wind',
+                        name: 'ماكينة نفخ نصف أوتوماتيك',
+                        specs: [
+                            'مناسبة لبداية مشروع زجاجات صغير',
+                            'تحتاج عامل للتشغيل والمتابعة',
+                            'إنتاجية أقل من الأوتوماتيك',
+                            'مناسبة للزجاجات والعبوات البسيطة'
+                        ],
+                        price: 'سعر تقريبي: من 250,000 إلى 700,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-wind',
+                        name: 'ماكينة نفخ أوتوماتيك',
+                        specs: [
+                            'إنتاجية أعلى',
+                            'مناسبة للمصانع المتوسطة',
+                            'تعمل بشكل أسرع وأكثر انتظامًا',
+                            'مناسبة لزجاجات المياه والعصائر'
+                        ],
+                        price: 'سعر تقريبي: من 900,000 إلى 2,500,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-bottle-water',
+                        name: 'ماكينة نفخ PET',
+                        specs: [
+                            'مخصصة لزجاجات PET',
+                            'مناسبة للمياه والعصائر',
+                            'تحتاج كومبريسور وضغط هواء مناسب',
+                            'تحتاج قوالب حسب حجم الزجاجة'
+                        ],
+                        price: 'سعر تقريبي: من 600,000 إلى 2,000,000 جنيه'
+                    }
+                ]
+            },
+
+            molds: {
+                title: 'الاسطمبات',
+                items: [
+                    {
+                        icon: 'fa-circle-dot',
+                        name: 'اسطمبة أغطية زجاجات',
+                        specs: [
+                            'تستخدم لإنتاج أغطية المياه والعصائر',
+                            'عدد التجاويف يحدد الإنتاجية',
+                            'تحتاج خامة PP غالبًا',
+                            'كلما زاد عدد التجاويف زاد السعر'
+                        ],
+                        price: 'سعر تقريبي: من 80,000 إلى 500,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-chair',
+                        name: 'اسطمبة كرسي بلاستيك',
+                        specs: [
+                            'اسطمبة كبيرة الحجم',
+                            'تحتاج ماكينة حقن كبيرة',
+                            'تكلفتها عالية بسبب الحجم والتصميم',
+                            'مناسبة للإنتاج الكمي'
+                        ],
+                        price: 'سعر تقريبي: من 700,000 إلى 2,500,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-box',
+                        name: 'اسطمبة علب بلاستيك',
+                        specs: [
+                            'مناسبة لعلب الطعام والتخزين',
+                            'يمكن تصميمها بمقاسات مختلفة',
+                            'تحتاج ماكينة حقن متوسطة',
+                            'السعر حسب الحجم وعدد التجاويف'
+                        ],
+                        price: 'سعر تقريبي: من 150,000 إلى 900,000 جنيه'
+                    }
+                ]
+            },
+
+            materials: {
+                title: 'الخامات البلاستيكية',
+                items: [
+                    {
+                        icon: 'fa-flask',
+                        name: 'خامة PP',
+                        specs: [
+                            'تستخدم في الأطباق والعلب والكراسي وبعض الأغطية',
+                            'مقاومة جيدة للحرارة',
+                            'مناسبة لمنتجات منزلية وصناعية',
+                            'متوفرة بكثرة في السوق'
+                        ],
+                        price: 'السعر يتغير يوميًا حسب السوق والمورد'
+                    },
+                    {
+                        icon: 'fa-flask',
+                        name: 'خامة PE',
+                        specs: [
+                            'تستخدم في الجراكن والعبوات وبعض المنتجات المرنة',
+                            'يوجد منها HDPE و LDPE',
+                            'مناسبة للنفخ والحقن حسب النوع',
+                            'مقاومة للصدمات والرطوبة'
+                        ],
+                        price: 'السعر يتغير يوميًا حسب السوق والمورد'
+                    },
+                    {
+                        icon: 'fa-flask',
+                        name: 'خامة PET',
+                        specs: [
+                            'تستخدم في زجاجات المياه والعصائر',
+                            'شفافة وخفيفة',
+                            'مناسبة لعمليات النفخ',
+                            'تحتاج تجفيف جيد قبل التشغيل'
+                        ],
+                        price: 'السعر يتغير يوميًا حسب السوق والمورد'
+                    }
+                ]
+            },
+
+            supportEquipment: {
+                title: 'معدات مساعدة',
+                items: [
+                    {
+                        icon: 'fa-snowflake',
+                        name: 'تشيلر تبريد',
+                        specs: [
+                            'يستخدم لتبريد الاسطمبة والماكينة',
+                            'ضروري لتحسين جودة الإنتاج',
+                            'يقلل زمن الدورة',
+                            'يتم اختياره حسب حجم الماكينات'
+                        ],
+                        price: 'سعر تقريبي: من 80,000 إلى 400,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-gauge-high',
+                        name: 'كومبريسور هواء',
+                        specs: [
+                            'مهم لماكينات النفخ وبعض خطوط التشغيل',
+                            'يتم اختياره حسب ضغط الهواء المطلوب',
+                            'يفضل وجود خزان هواء مناسب',
+                            'ضروري للنفخ والتشغيل الهوائي'
+                        ],
+                        price: 'سعر تقريبي: من 50,000 إلى 350,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-blender',
+                        name: 'خلاط خامات',
+                        specs: [
+                            'يخلط الخامة مع اللون أو الإضافات',
+                            'مناسب قبل عملية الحقن',
+                            'يوجد أحجام مختلفة',
+                            'يساعد على ثبات لون المنتج'
+                        ],
+                        price: 'سعر تقريبي: من 25,000 إلى 150,000 جنيه'
+                    },
+                    {
+                        icon: 'fa-recycle',
+                        name: 'كسارة بلاستيك',
+                        specs: [
+                            'تستخدم لطحن الهالك والراجع',
+                            'تقلل الفاقد في المصنع',
+                            'تحتاج سكاكين قوية وصيانة دورية',
+                            'يتم اختيارها حسب حجم المنتج'
+                        ],
+                        price: 'سعر تقريبي: من 60,000 إلى 300,000 جنيه'
+                    }
+                ]
+            },
+
+            labor: {
+                title: 'العمالة',
+                items: [
+                    {
+                        icon: 'fa-user-gear',
+                        name: 'مشغل ماكينة',
+                        specs: [
+                            'يشغل الماكينة ويتابع الإنتاج',
+                            'يتابع جودة القطع أثناء التشغيل',
+                            'يحتاج تدريب على نوع الماكينة',
+                            'عدد العمال حسب عدد الورديات'
+                        ],
+                        price: 'راتب تقديري شهري حسب الخبرة والمنطقة'
+                    },
+                    {
+                        icon: 'fa-user-check',
+                        name: 'فني جودة',
+                        specs: [
+                            'يفحص المنتج النهائي',
+                            'يتابع العيوب والأبعاد',
+                            'يسجل تقارير الجودة',
+                            'مهم لتقليل الهالك والمرتجعات'
+                        ],
+                        price: 'راتب تقديري شهري حسب الخبرة'
+                    }
+                ]
+            },
+
+            suppliers: {
+                title: 'الموردين',
+                items: [
+                    {
+                        icon: 'fa-truck',
+                        name: 'مورد ماكينات',
+                        specs: [
+                            'يوفر ماكينات جديدة أو مستعملة',
+                            'يفضل التأكد من الضمان وقطع الغيار',
+                            'مهم فحص الماكينة قبل الشراء',
+                            'يفضل وجود دعم فني بعد البيع'
+                        ],
+                        price: 'السعر حسب الماكينة والماركة والحالة'
+                    },
+                    {
+                        icon: 'fa-cubes',
+                        name: 'مورد اسطمبات',
+                        specs: [
+                            'ينفذ الاسطمبة حسب المنتج',
+                            'يحدد عدد التجاويف والخامة',
+                            'يجب الاتفاق على التجارب والتعديلات',
+                            'جودة الاسطمبة تؤثر على المنتج مباشرة'
+                        ],
+                        price: 'السعر حسب حجم وتعقيد الاسطمبة'
+                    },
+                    {
+                        icon: 'fa-flask',
+                        name: 'مورد خامات',
+                        specs: [
+                            'يوفر خامات PP و PE و PET وغيرها',
+                            'يجب التأكد من الجودة والثبات',
+                            'يفضل وجود أكثر من مورد',
+                            'السعر يتغير حسب السوق'
+                        ],
+                        price: 'السعر حسب نوع الخامة والسوق'
+                    }
+                ]
+            },
+
+            utilities: {
+                title: 'المرافق وتجهيز المصنع',
+                items: [
+                    {
+                        icon: 'fa-bolt',
+                        name: 'الكهرباء',
+                        specs: [
+                            'تحتاج قدرة مناسبة لعدد الماكينات',
+                            'يفضل وجود لوحة كهرباء صناعية',
+                            'يجب حساب الأحمال قبل التشغيل',
+                            'بعض الماكينات تحتاج 3 فاز'
+                        ],
+                        price: 'التكلفة حسب الأحمال والتجهيزات'
+                    },
+                    {
+                        icon: 'fa-water',
+                        name: 'المياه والتبريد',
+                        specs: [
+                            'مهمة للتشيلر والتبريد',
+                            'يجب توفير دورة تبريد مناسبة',
+                            'تحسن جودة المنتج وثبات التشغيل',
+                            'تقلل توقف الماكينة بسبب الحرارة'
+                        ],
+                        price: 'التكلفة حسب نظام التبريد'
+                    },
+                    {
+                        icon: 'fa-warehouse',
+                        name: 'مساحة المصنع',
+                        specs: [
+                            'تحدد حسب عدد الماكينات والمخزن',
+                            'يجب توفير تهوية ومسارات حركة',
+                            'يفضل وجود مكان للخامات والهالك',
+                            'تحتاج مساحة للصيانة والتشغيل'
+                        ],
+                        price: 'الإيجار حسب المنطقة والمساحة'
+                    }
+                ]
+            }
+        };
+
+        const articlesData = {
+            basics: {
+                title: 'أساسيات حقن البلاستيك',
+                icon: 'fa-gears',
+                content: `
+                    <p>
+                        عملية حقن البلاستيك من أشهر طرق تصنيع المنتجات البلاستيكية.
+                        تعتمد على تسخين حبيبات البلاستيك ثم حقنها داخل اسطمبة لها شكل المنتج المطلوب.
+                    </p>
+                    <ul>
+                        <li>الماكينة مسؤولة عن التسخين والحقن والضغط.</li>
+                        <li>الاسطمبة مسؤولة عن شكل المنتج النهائي.</li>
+                        <li>الخامة تحدد قوة المنتج ومرونته وجودته.</li>
+                        <li>التبريد الجيد يقلل العيوب ويزيد الإنتاجية.</li>
+                    </ul>
+                `
+            },
+
+            chooseProduct: {
+                title: 'اختيار المنتج المناسب',
+                icon: 'fa-box-open',
+                content: `
+                    <p>
+                        اختيار المنتج هو أهم خطوة قبل شراء الماكينة أو الاسطمبة.
+                        المنتج المناسب هو المنتج المطلوب في السوق وسهل التسويق.
+                    </p>
+                    <ul>
+                        <li>ابدأ بمنتج مطلوب في السوق المحلي.</li>
+                        <li>تجنب المنتجات المعقدة في البداية.</li>
+                        <li>احسب تكلفة الاسطمبة قبل اتخاذ القرار.</li>
+                        <li>تأكد من وجود عملاء أو تجار يمكن البيع لهم.</li>
+                    </ul>
+                `
+            },
+
+            materialsArticle: {
+                title: 'أنواع الخامات البلاستيكية',
+                icon: 'fa-flask',
+                content: `
+                    <p>
+                        تختلف الخامات البلاستيكية حسب نوع المنتج المطلوب.
+                    </p>
+                    <ul>
+                        <li><strong>PP:</strong> يستخدم في الأطباق، العلب، الكراسي وبعض الأغطية.</li>
+                        <li><strong>PE:</strong> يستخدم في الجراكن والعبوات والمنتجات المرنة.</li>
+                        <li><strong>PET:</strong> يستخدم غالبًا في زجاجات المياه والعصائر.</li>
+                        <li><strong>ABS:</strong> يستخدم في المنتجات القوية وقطع الغيار.</li>
+                    </ul>
+                `
+            },
+
+            machinesArticle: {
+                title: 'الماكينات المطلوبة للمصنع',
+                icon: 'fa-industry',
+                content: `
+                    <p>
+                        مصنع حقن البلاستيك يحتاج إلى ماكينة حقن ومعدات مساعدة لضمان جودة التشغيل.
+                    </p>
+                    <ul>
+                        <li>ماكينة حقن بلاستيك حسب حجم المنتج.</li>
+                        <li>اسطمبة مخصصة لشكل المنتج.</li>
+                        <li>تشيلر للتبريد.</li>
+                        <li>خلاط خامات.</li>
+                        <li>كسارة بلاستيك لطحن الهالك.</li>
+                    </ul>
+                `
+            },
+
+            mistakes: {
+                title: 'أخطاء شائعة في بداية المشروع',
+                icon: 'fa-triangle-exclamation',
+                content: `
+                    <p>
+                        كثير من أصحاب المشاريع يبدأون بشراء ماكينة قبل دراسة المنتج والسوق.
+                    </p>
+                    <ul>
+                        <li>شراء ماكينة غير مناسبة لحجم المنتج.</li>
+                        <li>اختيار اسطمبة رديئة لتقليل التكلفة.</li>
+                        <li>عدم حساب الكهرباء والعمالة والهالك.</li>
+                        <li>عدم وجود خطة تسويق واضحة.</li>
+                    </ul>
+                `
+            },
+
+            costArticle: {
+                title: 'حساب تكلفة المنتج',
+                icon: 'fa-calculator',
+                content: `
+                    <p>
+                        حساب تكلفة المنتج لا يعتمد على سعر الخامة فقط.
+                    </p>
+                    <ul>
+                        <li>تكلفة الخامة المستخدمة في القطعة.</li>
+                        <li>تكلفة الكهرباء أثناء التشغيل.</li>
+                        <li>تكلفة العمالة والإشراف.</li>
+                        <li>نسبة الهالك والراجع.</li>
+                        <li>الصيانة والاستهلاك.</li>
+                    </ul>
+                `
+            },
+
+            injectionVsBlow: {
+                title: 'الفرق بين الحقن والنفخ',
+                icon: 'fa-code-compare',
+                content: `
+                    <p>
+                        الحقن والنفخ طريقتان مختلفتان لتصنيع المنتجات البلاستيكية.
+                    </p>
+                    <ul>
+                        <li><strong>الحقن:</strong> يستخدم للأغطية والعلب والكراسي والقطع الصناعية.</li>
+                        <li><strong>النفخ:</strong> يستخدم للزجاجات والجراكن وعبوات المنظفات.</li>
+                    </ul>
+                `
+            },
+
+            usedMachine: {
+                title: 'نصائح قبل شراء ماكينة مستعملة',
+                icon: 'fa-magnifying-glass-chart',
+                content: `
+                    <p>
+                        شراء ماكينة مستعملة قد يقلل التكلفة، لكنه يحتاج فحص جيد.
+                    </p>
+                    <ul>
+                        <li>افحص حالة الهيدروليك والتسريب.</li>
+                        <li>تأكد من عمل الكنترول والشاشة.</li>
+                        <li>اختبر السخانات والحساسات.</li>
+                        <li>جرب الماكينة بإنتاج فعلي قبل الشراء.</li>
+                        <li>اسأل عن توافر قطع الغيار.</li>
+                    </ul>
+                `
+            }
+        };
+
+        const feasibilityStudies = {
+            'زجاجات مياه': {
+                summary: 'دراسة جدوى مبدئية لمنتج زجاجات المياه داخل السوق المصري.',
+                visuals: [
+                    { icon: 'fa-bottle-water', title: 'المنتج', text: 'زجاجات مياه بمقاسات مختلفة مثل 330 مل و500 مل و1.5 لتر.' },
+                    { icon: 'fa-industry', title: 'الماكينة', text: 'ماكينة نفخ PET مع تجهيزات التشغيل اللازمة.' },
+                    { icon: 'fa-flask', title: 'الخامة', text: 'خامة PET أو بريفرم جاهز حسب نظام التشغيل.' }
+                ],
+                location: [
+                    'يفضل أن يكون المصنع داخل منطقة صناعية أو ورشة مرخصة.',
+                    'يفضل قربه من طرق النقل والموردين.',
+                    'يجب توفر كهرباء 3 فاز ومصدر مياه مناسب.'
+                ],
+                area: [
+                    'المساحة المقترحة: من 150 إلى 250 متر مربع كبداية.',
+                    'تخصيص مساحة للإنتاج، التخزين، الخامات، والمنتج النهائي.'
+                ],
+                machines: [
+                    'ماكينة نفخ PET.',
+                    'كمبريسور هواء.',
+                    'تشيلر تبريد.',
+                    'قوالب زجاجات حسب المقاسات المطلوبة.'
+                ],
+                mold: [
+                    'قالب زجاجات حسب الشكل والسعة المطلوبة.',
+                    'يمكن البدء بمقاس واحد لتقليل التكلفة.'
+                ],
+                materials: [
+                    'PET أو بريفرم جاهز.',
+                    'أغطية مناسبة للزجاجات.',
+                    'استيكرات أو مواد طباعة إن وجدت.'
+                ],
+                labor: [
+                    '1 مشغل ماكينة.',
+                    '1 عامل تعبئة أو تجميع.',
+                    '1 عامل مخزن أو تحميل.',
+                    '1 مشرف أو صاحب المشروع للإدارة.'
+                ],
+                salaries: [
+                    'مشغل ماكينة: من 7,000 إلى 10,000 جنيه شهريًا.',
+                    'عامل إنتاج: من 5,500 إلى 7,500 جنيه شهريًا.',
+                    'عامل مخزن/تحميل: من 5,500 إلى 7,000 جنيه شهريًا.',
+                    'مشرف إنتاج: من 10,000 إلى 15,000 جنيه شهريًا.'
+                ],
+                utilities: [
+                    'كهرباء 3 فاز.',
+                    'مياه.',
+                    'تهوية جيدة.',
+                    'أدوات أمان ومكافحة حريق.'
+                ],
+                costs: [
+                    'ماكينة وخط تشغيل: تقديريًا من 900,000 إلى 2,500,000 جنيه.',
+                    'القوالب: من 50,000 إلى 300,000 جنيه.',
+                    'الخامات والتشغيل الأولي: حسب الكمية المطلوبة.',
+                    'إيجار وتجهيز المكان: حسب المنطقة والمساحة.'
+                ]
+            },
+
+            'أغطية زجاجات': {
+                summary: 'دراسة جدوى مبدئية لإنتاج أغطية الزجاجات باستخدام ماكينات الحقن.',
+                visuals: [
+                    { icon: 'fa-circle-dot', title: 'المنتج', text: 'أغطية زجاجات مياه وعصائر ومنتجات تعبئة.' },
+                    { icon: 'fa-industry', title: 'الماكينة', text: 'ماكينة حقن صغيرة أو متوسطة.' },
+                    { icon: 'fa-flask', title: 'الخامة', text: 'خامة PP غالبًا لإنتاج الأغطية.' }
+                ],
+                location: [
+                    'يفضل مكان داخل منطقة صناعية أو ورشة مجهزة.',
+                    'سهولة دخول الخامات وخروج المنتج.'
+                ],
+                area: [
+                    'المساحة المقترحة: من 100 إلى 180 متر مربع.',
+                    'يتم تخصيص مساحة للماكينة والخامات والتعبئة.'
+                ],
+                machines: [
+                    'ماكينة حقن 120 طن أو 180 طن.',
+                    'تشيلر تبريد.',
+                    'خلاط خامات.',
+                    'كسارة بلاستيك عند الحاجة.'
+                ],
+                mold: [
+                    'اسطمبة أغطية زجاجات متعددة التجاويف.',
+                    'عدد التجاويف يؤثر على الإنتاجية والسعر.'
+                ],
+                materials: [
+                    'خامة PP.',
+                    'ماستر باتش لون.',
+                    'إضافات حسب مواصفات العميل.'
+                ],
+                labor: [
+                    '1 مشغل ماكينة.',
+                    '1 عامل فرز أو تعبئة.',
+                    '1 عامل مخزن.',
+                    '1 مشرف تشغيل.'
+                ],
+                salaries: [
+                    'مشغل ماكينة: من 7,000 إلى 9,500 جنيه.',
+                    'عامل تعبئة: من 5,500 إلى 7,000 جنيه.',
+                    'عامل مخزن: من 5,500 إلى 7,000 جنيه.',
+                    'مشرف: من 10,000 إلى 14,000 جنيه.'
+                ],
+                utilities: [
+                    'كهرباء 3 فاز.',
+                    'مياه للتبريد.',
+                    'تهوية جيدة.',
+                    'معدات أمان.'
+                ],
+                costs: [
+                    'ماكينة الحقن: من 450,000 إلى 1,400,000 جنيه.',
+                    'الاسطمبة: من 80,000 إلى 500,000 جنيه.',
+                    'خامات التشغيل الأولي: حسب حجم الطلب.',
+                    'إيجار وتجهيزات: حسب المكان.'
+                ]
+            },
+
+            'كراسي بلاستيك': {
+                summary: 'دراسة جدوى مبدئية لإنتاج الكراسي البلاستيكية.',
+                visuals: [
+                    { icon: 'fa-chair', title: 'المنتج', text: 'كراسي بلاستيك منزلية أو خارجية.' },
+                    { icon: 'fa-industry', title: 'الماكينة', text: 'ماكينة حقن كبيرة بقدرة عالية.' },
+                    { icon: 'fa-flask', title: 'الخامة', text: 'خامة PP أو خامات مناسبة لتحمل الأحمال.' }
+                ],
+                location: [
+                    'يفضل أن يكون المصنع داخل منطقة صناعية.',
+                    'المكان يجب أن يسمح بدخول ونقل الماكينات الكبيرة.',
+                    'يفضل قربه من الأسواق أو التجار.'
+                ],
+                area: [
+                    'المساحة المقترحة: من 250 إلى 400 متر مربع.',
+                    'مساحة كافية للتشغيل والتجميع والتخزين.'
+                ],
+                machines: [
+                    'ماكينة حقن 350 طن أو 500 طن.',
+                    'تشيلر تبريد.',
+                    'خلاط خامات.',
+                    'كسارة بلاستيك.',
+                    'معدات مناولة داخلية.'
+                ],
+                mold: [
+                    'اسطمبة كرسي بلاستيك.',
+                    'قد تحتاج أكثر من تصميم حسب شكل الكرسي.'
+                ],
+                materials: [
+                    'خامة PP.',
+                    'إضافات تقوية حسب المواصفات.',
+                    'ألوان أو ماستر باتش.'
+                ],
+                labor: [
+                    '1 مشغل ماكينة.',
+                    '2 عمال تشطيب وتجميع.',
+                    '1 عامل مخزن.',
+                    '1 فني صيانة جزئي أو دائم.',
+                    '1 مشرف إنتاج.'
+                ],
+                salaries: [
+                    'مشغل ماكينة: من 8,000 إلى 11,000 جنيه.',
+                    'عامل إنتاج/تشطيب: من 5,500 إلى 7,500 جنيه.',
+                    'عامل مخزن: من 5,500 إلى 7,000 جنيه.',
+                    'فني صيانة: من 8,000 إلى 12,000 جنيه.',
+                    'مشرف إنتاج: من 10,000 إلى 16,000 جنيه.'
+                ],
+                utilities: [
+                    'كهرباء 3 فاز بقدرة أعلى.',
+                    'مياه وتبريد.',
+                    'تهوية قوية.',
+                    'وسائل أمان ومكافحة حريق.'
+                ],
+                costs: [
+                    'ماكينة الحقن: من 1,800,000 إلى 6,000,000 جنيه.',
+                    'اسطمبة الكرسي: من 700,000 إلى 2,500,000 جنيه.',
+                    'الخامات: حسب حجم التشغيل.',
+                    'إيجار وتجهيزات: أعلى من المنتجات الصغيرة.'
+                ]
+            }
+        };
+
+        function hideAllSections() {
+            hero.style.display = 'none';
+            productsSection.style.display = 'none';
+            subProductsSection.style.display = 'none';
+            factoryResourcesSection.style.display = 'none';
+            resourceItemsSection.style.display = 'none';
+            resourceDetailsSection.style.display = 'none';
+            aboutSection.style.display = 'none';
+            pricesSection.style.display = 'none';
+            articlesSection.style.display = 'none';
+            articleDetailsSection.style.display = 'none';
+            universitySection.style.display = 'none';
+            projectPlanningSection.style.display = 'none';
+            feasibilityDetailsSection.style.display = 'none';
+        }
+
+        function showProductsSection() {
+            hideAllSections();
+            productsSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function backToHome() {
+            hideAllSections();
+            hero.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showSubProducts(type) {
+            const data = productsData[type];
+
+            if (!data) {
+                return;
+            }
+
+            hideAllSections();
+            subProductsSection.style.display = 'block';
+            subProductsTitle.textContent = data.title;
+            subProductsGrid.innerHTML = '';
+
+            data.items.forEach(item => {
+                const icon = item[0];
+                const name = item[1];
+
+                subProductsGrid.innerHTML += `
+                    <div class="product-card" onclick="selectProduct('${name}')">
+                        <i class="fa-solid ${icon}"></i>
+                        <h3>${name}</h3>
+                        <p>اضغط لاختيار المنتج وبدء دراسة الجدوى.</p>
+                    </div>
+                `;
+            });
+
+            window.scrollTo(0, 0);
+        }
+
+        function backToProducts() {
+            hideAllSections();
+            productsSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function selectProduct(productName) {
+            showFeasibilityStudy(productName);
+        }
+
+        function showFactoryResources() {
+            hideAllSections();
+            factoryResourcesSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showResourceItems(type) {
+            const data = resourcesData[type];
+
+            if (!data) {
+                return;
+            }
+
+            currentResourceType = type;
+
+            hideAllSections();
+            resourceItemsSection.style.display = 'block';
+            resourceItemsTitle.textContent = data.title;
+            resourceItemsGrid.innerHTML = '';
+
+            data.items.forEach((item, index) => {
+                resourceItemsGrid.innerHTML += `
+                    <div class="product-card" onclick="showResourceDetails('${type}', ${index})">
+                        <i class="fa-solid ${item.icon}"></i>
+                        <h3>${item.name}</h3>
+                        <p>اضغط لعرض المواصفات والسعر التقريبي.</p>
+                    </div>
+                `;
+            });
+
+            window.scrollTo(0, 0);
+        }
+
+        function showResourceDetails(type, index) {
+            const item = resourcesData[type].items[index];
+
+            hideAllSections();
+            resourceDetailsSection.style.display = 'block';
+            resourceDetailsTitle.textContent = item.name;
+
+            let specsHtml = '';
+
+            item.specs.forEach(spec => {
+                specsHtml += `
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        ${spec}
+                    </li>
+                `;
+            });
+
+            resourceDetailsCard.innerHTML = `
+                <div class="resource-icon">
+                    <i class="fa-solid ${item.icon}"></i>
+                </div>
+
+                <h3>${item.name}</h3>
+
+                <ul>
+                    ${specsHtml}
+                </ul>
+
+                <div class="price-box">
+                    <i class="fa-solid fa-tags"></i>
+                    <strong>${item.price}</strong>
+                </div>
+
+                <button class="start-btn details-action-btn" onclick="alert('سيتم إضافة هذا العنصر لدراسة الجدوى لاحقًا')">
+                    إضافة لدراسة الجدوى
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            `;
+
+            window.scrollTo(0, 0);
+        }
+
+        function backToFactoryResources() {
+            hideAllSections();
+            factoryResourcesSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function backToResourceItems() {
+            hideAllSections();
+            resourceItemsSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showAboutSection() {
+            hideAllSections();
+            aboutSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showPricesSection() {
+            hideAllSections();
+            pricesSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showArticlesSection() {
+            hideAllSections();
+            articlesSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showArticleDetails(articleKey) {
+            const article = articlesData[articleKey];
+
+            if (!article) {
+                return;
+            }
+
+            hideAllSections();
+            articleDetailsSection.style.display = 'block';
+            articleDetailsTitle.textContent = article.title;
+
+            articleDetailsCard.innerHTML = `
+                <div class="article-details-icon">
+                    <i class="fa-solid ${article.icon}"></i>
+                </div>
+
+                <h3>${article.title}</h3>
+
+                <div class="article-content">
+                    ${article.content}
+                </div>
+            `;
+
+            window.scrollTo(0, 0);
+        }
+
+        function backToArticles() {
+            hideAllSections();
+            articlesSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showUniversitySection() {
+            hideAllSections();
+            universitySection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function getDefaultFeasibilityStudy(productName) {
+            return {
+                summary: `دراسة جدوى مبدئية لمنتج ${productName} داخل السوق المصري.`,
+                visuals: [
+                    { icon: 'fa-box', title: 'المنتج', text: `المنتج المختار: ${productName}` },
+                    { icon: 'fa-industry', title: 'الماكينة', text: 'يتم تحديد الماكينة المناسبة حسب حجم ووزن المنتج.' },
+                    { icon: 'fa-flask', title: 'الخامة', text: 'يتم اختيار الخامة وفق استخدام المنتج والمواصفات المطلوبة.' }
+                ],
+                location: [
+                    'يفضل أن يكون المصنع داخل منطقة صناعية أو مكان مرخص.',
+                    'سهولة وصول الموردين والعملاء ميزة مهمة.',
+                    'توفر كهرباء 3 فاز ووسائل التهوية عامل أساسي.'
+                ],
+                area: [
+                    'المساحة المقترحة كبداية: من 120 إلى 250 متر مربع.',
+                    'يتم تخصيص جزء للإنتاج وجزء للتخزين وجزء للتعبئة.'
+                ],
+                machines: [
+                    'ماكينة مناسبة لحجم المنتج.',
+                    'تشيلر تبريد.',
+                    'خلاط خامات.',
+                    'كسارة بلاستيك عند الحاجة.'
+                ],
+                mold: [
+                    'اسطمبة أو قالب خاص بالمنتج.',
+                    'التكلفة تختلف حسب التصميم وعدد التجاويف.'
+                ],
+                materials: [
+                    'الخامة الأساسية المناسبة للمنتج.',
+                    'ألوان أو إضافات حسب الحاجة.'
+                ],
+                labor: [
+                    '1 مشغل ماكينة.',
+                    '1 أو 2 عامل إنتاج أو تعبئة.',
+                    '1 عامل مخزن.',
+                    'إشراف إداري حسب حجم المشروع.'
+                ],
+                salaries: [
+                    'مشغل ماكينة: من 7,000 إلى 10,000 جنيه.',
+                    'عامل إنتاج: من 5,500 إلى 7,500 جنيه.',
+                    'عامل مخزن: من 5,500 إلى 7,000 جنيه.',
+                    'مشرف: من 10,000 إلى 14,000 جنيه.'
+                ],
+                utilities: [
+                    'كهرباء 3 فاز.',
+                    'مياه.',
+                    'تهوية.',
+                    'معدات أمان.'
+                ],
+                costs: [
+                    'التكاليف تختلف حسب نوع المنتج وحجم التشغيل.',
+                    'الماكينة والاسطمبة والخامات هي أهم بنود التكلفة.',
+                    'الأسعار المعروضة تقديرية للسوق المصري.'
+                ]
+            };
+        }
+
+        function renderStudyList(items) {
+            return items.map(item => `
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>${item}</span>
+                </li>
+            `).join('');
+        }
+
+        function renderVisualCards(items) {
+            return items.map(item => `
+                <div class="study-visual-card">
+                    <i class="fa-solid ${item.icon}"></i>
+                    <h4>${item.title}</h4>
+                    <p>${item.text}</p>
+                </div>
+            `).join('');
+        }
+
+        function showFeasibilityStudy(productName) {
+            const study = feasibilityStudies[productName] || getDefaultFeasibilityStudy(productName);
+
+            hideAllSections();
+            feasibilityDetailsSection.style.display = 'block';
+
+            feasibilityTitle.textContent = `دراسة جدوى: ${productName}`;
+            feasibilityIntro.textContent = study.summary;
+
+            feasibilityDetailsCard.innerHTML = `
+                <div class="study-visuals">
+                    ${renderVisualCards(study.visuals)}
+                </div>
+
+                <div class="study-sections">
+
+                    <div class="study-box">
+                        <h4><i class="fa-solid fa-location-dot"></i> اختيار مكان المصنع</h4>
+                        <ul>${renderStudyList(study.location)}</ul>
+                    </div>
+
+                    <div class="study-box">
+                        <h4><i class="fa-solid fa-ruler-combined"></i> المساحة المطلوبة</h4>
+                        <ul>${renderStudyList(study.area)}</ul>
+                    </div>
+
+                    <div class="study-box">
+                        <h4><i class="fa-solid fa-industry"></i> الماكينات المطلوبة</h4>
+                        <ul>${renderStudyList(study.machines)}</ul>
+                    </div>
+
+                    <div class="study-box">
+                        <h4><i class="fa-solid fa-cubes"></i> الاسطمبة / القالب</h4>
+                        <ul>${renderStudyList(study.mold)}</ul>
+                    </div>
+
+                    <div class="study-box">
+                        <h4><i class="fa-solid fa-flask"></i> الخامات</h4>
+                        <ul>${renderStudyList(study.materials)}</ul>
+                    </div>
+
+                    <div class="study-box">
+                        <h4><i class="fa-solid fa-users"></i> العمالة المطلوبة</h4>
+                        <ul>${renderStudyList(study.labor)}</ul>
+                    </div>
+
+                    <div class="study-box">
+                        <h4><i class="fa-solid fa-money-bill-wave"></i> رواتب العمال</h4>
+                        <ul>${renderStudyList(study.salaries)}</ul>
+                    </div>
+
+                    <div class="study-box">
+                        <h4><i class="fa-solid fa-plug-circle-bolt"></i> المرافق والتشغيل</h4>
+                        <ul>${renderStudyList(study.utilities)}</ul>
+                    </div>
+
+                    <div class="study-box full-width">
+                        <h4><i class="fa-solid fa-tags"></i> التكاليف التقديرية</h4>
+                        <ul>${renderStudyList(study.costs)}</ul>
+                    </div>
+
+                </div>
+
+                <div class="study-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>
+                        جميع الأرقام والمعلومات المعروضة هنا هي معلومات مبدئية وتقديرية
+                        تساعد على تكوين تصور أولي عن المشروع داخل السوق المصري،
+                        ويجب مراجعتها مع الموردين وأسعار السوق الفعلية قبل التنفيذ.
+                    </p>
+                </div>
+            `;
+
+            window.scrollTo(0, 0);
+        }
+
+        function backToStudyProducts() {
+            hideAllSections();
+            subProductsSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showProjectPlanning() {
+            hideAllSections();
+            projectPlanningSection.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function addHorizontalActivity() {
+            const rows = [
+                document.getElementById('activityNamesRow'),
+                document.getElementById('normalTimeRow'),
+                document.getElementById('normalCostRow'),
+                document.getElementById('crashTimeRow'),
+                document.getElementById('crashCostRow'),
+                document.getElementById('deleteActivityRow')
+            ];
+
+            const newIndex = rows[0].children.length;
+
+            rows[0].insertAdjacentHTML('beforeend', '<td><input type="text" placeholder="0-1"></td>');
+            rows[1].insertAdjacentHTML('beforeend', '<td><input type="number" placeholder="0"></td>');
+            rows[2].insertAdjacentHTML('beforeend', '<td><input type="number" placeholder="0"></td>');
+            rows[3].insertAdjacentHTML('beforeend', '<td><input type="number" placeholder="0"></td>');
+            rows[4].insertAdjacentHTML('beforeend', '<td><input type="number" placeholder="0"></td>');
+            rows[5].insertAdjacentHTML('beforeend', `<td><button class="delete-cell-btn" onclick="deleteHorizontalActivity(${newIndex})">×</button></td>`);
+        }
+
+        function deleteHorizontalActivity(index) {
+            const rows = [
+                document.getElementById('activityNamesRow'),
+                document.getElementById('normalTimeRow'),
+                document.getElementById('normalCostRow'),
+                document.getElementById('crashTimeRow'),
+                document.getElementById('crashCostRow'),
+                document.getElementById('deleteActivityRow')
+            ];
+
+            rows.forEach(row => {
+                if (row.children[index]) {
+                    row.children[index].remove();
+                }
+            });
+
+            refreshDeleteButtons();
+        }
+
+        function refreshDeleteButtons() {
+            const deleteRow = document.getElementById('deleteActivityRow');
+
+            for (let i = 1; i < deleteRow.children.length; i++) {
+                deleteRow.children[i].innerHTML = `<button class="delete-cell-btn" onclick="deleteHorizontalActivity(${i})">×</button>`;
+            }
+        }
+
+        function setHorizontalTableData(activities, normalTimes, normalCosts, crashTimes, crashCosts) {
+            const activityNamesRow = document.getElementById('activityNamesRow');
+            const normalTimeRow = document.getElementById('normalTimeRow');
+            const normalCostRow = document.getElementById('normalCostRow');
+            const crashTimeRow = document.getElementById('crashTimeRow');
+            const crashCostRow = document.getElementById('crashCostRow');
+            const deleteActivityRow = document.getElementById('deleteActivityRow');
+
+            activityNamesRow.innerHTML = '<th>Activities</th>';
+            normalTimeRow.innerHTML = '<th>Normal Time</th>';
+            normalCostRow.innerHTML = '<th>Normal Cost</th>';
+            crashTimeRow.innerHTML = '<th>Crash Time</th>';
+            crashCostRow.innerHTML = '<th>Crash Cost</th>';
+            deleteActivityRow.innerHTML = '<th>حذف</th>';
+
+            activities.forEach((activity, index) => {
+                activityNamesRow.insertAdjacentHTML('beforeend', `<td><input type="text" value="${activity}"></td>`);
+                normalTimeRow.insertAdjacentHTML('beforeend', `<td><input type="number" value="${normalTimes[index]}"></td>`);
+                normalCostRow.insertAdjacentHTML('beforeend', `<td><input type="number" value="${normalCosts[index]}"></td>`);
+                crashTimeRow.insertAdjacentHTML('beforeend', `<td><input type="number" value="${crashTimes[index]}"></td>`);
+                crashCostRow.insertAdjacentHTML('beforeend', `<td><input type="number" value="${crashCosts[index]}"></td>`);
+                deleteActivityRow.insertAdjacentHTML('beforeend', `<td><button class="delete-cell-btn" onclick="deleteHorizontalActivity(${index + 1})">×</button></td>`);
+            });
+        }
+
+        function loadSheetOneData() {
+            setHorizontalTableData(
+                [
+                    '0-1', '0-2', '0-3', '1-2', '1-3',
+                    '1-4', '2-4', '2-5', '3-4', '3-7',
+                    '4-5', '4-6', '4-7', '5-6', '6-7'
+                ],
+                [6, 5, 4, 3, 2, 4, 6, 7, 4, 3, 5, 2, 6, 4, 3],
+                [25, 20, 15, 10, 5, 12, 18, 35, 12, 10, 18, 5, 20, 10, 9],
+                [4, 3, 3, 2, 1, 2, 4, 4, 2, 2, 3, 2, 3, 2, 3],
+                [32, 25, 18, 12, 6.5, 14, 23, 44, 18, 13, 25, 5, 30, 15, 9]
+            );
+
+            document.getElementById('plannerResults').innerHTML = '';
+        }
+
+        function readArrowActivities(useCrash = false) {
+            const names = document.querySelectorAll('#activityNamesRow input');
+            const normalTimes = document.querySelectorAll('#normalTimeRow input');
+            const normalCosts = document.querySelectorAll('#normalCostRow input');
+            const crashTimes = document.querySelectorAll('#crashTimeRow input');
+            const crashCosts = document.querySelectorAll('#crashCostRow input');
+
+            const activities = [];
+
+            names.forEach((input, index) => {
+                const activityName = input.value.trim();
+
+                if (!activityName || !activityName.includes('-')) {
+                    return;
+                }
+
+                const parts = activityName.split('-');
+
+                if (parts.length !== 2) {
+                    return;
+                }
+
+                const from = parts[0].trim();
+                const to = parts[1].trim();
+
+                const normalTime = Number(normalTimes[index].value);
+                const normalCost = Number(normalCosts[index].value);
+                const crashTime = Number(crashTimes[index].value);
+                const crashCost = Number(crashCosts[index].value);
+
+                activities.push({
+                    name: activityName,
+                    from: from,
+                    to: to,
+                    duration: useCrash ? crashTime : normalTime,
+                    cost: useCrash ? crashCost : normalCost,
+                    normalTime: normalTime,
+                    normalCost: normalCost,
+                    crashTime: crashTime,
+                    crashCost: crashCost,
+                    ES: 0,
+                    EF: 0,
+                    LS: 0,
+                    LF: 0,
+                    slack: 0
+                });
+            });
+
+            return activities;
+        }
+
+        function getProjectNodes(activities) {
+            const nodes = new Set();
+
+            activities.forEach(activity => {
+                nodes.add(activity.from);
+                nodes.add(activity.to);
+            });
+
+            return Array.from(nodes).sort((a, b) => Number(a) - Number(b));
+        }
+
+        function calculateArrowNetwork(useCrash = false) {
+            const activities = readArrowActivities(useCrash);
+
+            if (activities.length === 0) {
+                alert('من فضلك أدخل الأنشطة بصيغة صحيحة مثل 0-1');
+                return null;
+            }
+
+            const nodes = getProjectNodes(activities);
+            const earliest = {};
+            const latest = {};
+
+            nodes.forEach(node => {
+                earliest[node] = 0;
+                latest[node] = Infinity;
+            });
+
+            // Forward Pass
+            nodes.forEach(node => {
+                const outgoing = activities.filter(activity => activity.from === node);
+
+                outgoing.forEach(activity => {
+                    const finish = earliest[activity.from] + activity.duration;
+
+                    if (finish > earliest[activity.to]) {
+                        earliest[activity.to] = finish;
+                    }
+                });
+            });
+
+            const startNode = nodes[0];
+            const endNode = nodes[nodes.length - 1];
+            const projectTime = earliest[endNode];
+
+            latest[endNode] = projectTime;
+
+            // Backward Pass
+            [...nodes].reverse().forEach(node => {
+                const incoming = activities.filter(activity => activity.to === node);
+
+                incoming.forEach(activity => {
+                    const possibleLatest = latest[activity.to] - activity.duration;
+
+                    if (possibleLatest < latest[activity.from]) {
+                        latest[activity.from] = possibleLatest;
+                    }
+                });
+            });
+
+            if (latest[startNode] === Infinity) {
+                latest[startNode] = 0;
+            }
+
+            activities.forEach(activity => {
+                activity.ES = earliest[activity.from];
+                activity.EF = activity.ES + activity.duration;
+                activity.LF = latest[activity.to];
+                activity.LS = activity.LF - activity.duration;
+                activity.slack = activity.LS - activity.ES;
+            });
+
+            const totalCost = activities.reduce((sum, activity) => sum + activity.cost, 0);
+
+            return {
+                activities,
+                nodes,
+                earliest,
+                latest,
+                projectTime,
+                totalCost
+            };
+        }
+
+        function findCriticalPaths(result) {
+            const activities = result.activities;
+            const startNode = result.nodes[0];
+            const endNode = result.nodes[result.nodes.length - 1];
+
+            const outgoing = {};
+
+            activities.forEach(activity => {
+                if (activity.slack !== 0) {
+                    return;
+                }
+
+                if (!outgoing[activity.from]) {
+                    outgoing[activity.from] = [];
+                }
+
+                outgoing[activity.from].push(activity);
+            });
+
+            const paths = [];
+
+            function dfs(currentNode, currentPath, totalDuration) {
+                if (currentNode === endNode) {
+                    if (totalDuration === result.projectTime) {
+                        paths.push(currentPath.map(activity => activity.name));
+                    }
+                    return;
+                }
+
+                const nextActivities = outgoing[currentNode] || [];
+
+                nextActivities.forEach(activity => {
+                    const alreadyUsed = currentPath.some(item => item.name === activity.name);
+
+                    if (alreadyUsed) {
+                        return;
+                    }
+
+                    dfs(
+                        activity.to,
+                        [...currentPath, activity],
+                        totalDuration + activity.duration
+                    );
+                });
+            }
+
+            dfs(startNode, [], 0);
+
+            return paths;
+        }
+
+        function renderArrowActivitiesTable(activities) {
+            let html = '';
+
+            activities.forEach(activity => {
+                const criticalClass = activity.slack === 0 ? 'critical-row' : '';
+
+                html += `
+                    <tr class="${criticalClass}">
+                        <td>${activity.name}</td>
+                        <td>${activity.duration}</td>
+                        <td>${activity.ES}</td>
+                        <td>${activity.EF}</td>
+                        <td>${activity.LS}</td>
+                        <td>${activity.LF}</td>
+                        <td>${activity.slack}</td>
+                    </tr>
+                `;
+            });
+
+            return html;
+        }
+
+        function renderEventsTable(nodes, earliest, latest) {
+            let html = '';
+
+            nodes.forEach(node => {
+                html += `
+                    <tr>
+                        <td>${node}</td>
+                        <td>${earliest[node]}</td>
+                        <td>${latest[node]}</td>
+                    </tr>
+                `;
+            });
+
+            return html;
+        }
+
+        function calculateArrowCPM() {
+            const normalResult = calculateArrowNetwork(false);
+            const crashResult = calculateArrowNetwork(true);
+
+            if (!normalResult || !crashResult) {
+                return;
+            }
+
+            const criticalPaths = findCriticalPaths(normalResult);
+
+            const criticalPathText = criticalPaths.length
+                ? criticalPaths.map(path => path.join(' → ')).join('<br>')
+                : 'لم يتم تحديد مسار حرج';
+
+            const resultsDiv = document.getElementById('plannerResults');
+
+            resultsDiv.innerHTML = `
+                <div class="result-summary">
+
+                    <div class="result-box">
+                        <i class="fa-solid fa-clock"></i>
+                        <h4>Normal Project Time</h4>
+                        <p>${normalResult.projectTime}</p>
+                    </div>
+
+                    <div class="result-box">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <h4>Normal Cost</h4>
+                        <p>${normalResult.totalCost}</p>
+                    </div>
+
+                    <div class="result-box">
+                        <i class="fa-solid fa-compress"></i>
+                        <h4>Crash Project Time</h4>
+                        <p>${crashResult.projectTime}</p>
+                    </div>
+
+                    <div class="result-box">
+                        <i class="fa-solid fa-tags"></i>
+                        <h4>Crash Cost</h4>
+                        <p>${crashResult.totalCost}</p>
+                    </div>
+
+                </div>
+
+                <div class="critical-path-box">
+                    <h3>
+                        <i class="fa-solid fa-route"></i>
+                        Critical Path
+                    </h3>
+                    <p>${criticalPathText}</p>
+                </div>
+
+                <h3 class="result-title">Event Times</h3>
+
+                <div class="table-wrap">
+                    <table class="planner-table result-table">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Earliest Time</th>
+                                <th>Latest Time</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            ${renderEventsTable(normalResult.nodes, normalResult.earliest, normalResult.latest)}
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="result-title">Activities Allowances</h3>
+
+                <div class="table-wrap">
+                    <table class="planner-table result-table">
+                        <thead>
+                            <tr>
+                                <th>Activity</th>
+                                <th>Duration</th>
+                                <th>ES</th>
+                                <th>EF</th>
+                                <th>LS</th>
+                                <th>LF</th>
+                                <th>Allowance / Slack</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            ${renderArrowActivitiesTable(normalResult.activities)}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="study-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>
+                        الأنشطة المظللة هي الأنشطة الحرجة التي السماحية الخاصة بها تساوي صفر.
+                        المسار الحرج المعروض هنا هو مسار متصل من أول حدث إلى آخر حدث.
+                    </p>
+                </div>
+            `;
+
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>
